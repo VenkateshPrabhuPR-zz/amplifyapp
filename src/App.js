@@ -37,7 +37,7 @@ function App() {
         const image = await Storage.get(note.image);
         note.image = image;
       }
-      return note;
+      return note;      
     }))
     setNotes(apiData.data.listNotes.items);
   }
